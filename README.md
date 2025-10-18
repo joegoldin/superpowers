@@ -26,7 +26,7 @@ Read the introduction: [Superpowers for Claude Code](https://blog.fsck.com/2025/
 In Claude Code, register the marketplace first:
 
 ```bash
-/plugin marketplace add obra/superpowers-marketplace
+/plugin marketplace add joegoldin/superpowers-marketplace
 ```
 
 Then install the plugin from this marketplace:
@@ -163,5 +163,5 @@ MIT License - see LICENSE file for details
 
 ## Support
 
-- **Issues**: https://github.com/obra/superpowers/issues
-- **Marketplace**: https://github.com/obra/superpowers-marketplace
+- **Issues**: https://github.com/joegoldin/superpowers/issues
+- **Marketplace**: https://github.com/joegoldin/superpowers-marketplace
