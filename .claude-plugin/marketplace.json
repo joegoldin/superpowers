@@ -2,8 +2,8 @@
   "name": "superpowers-dev",
   "description": "Development marketplace for Superpowers core skills library",
   "owner": {
-    "name": "Jesse Vincent",
-    "email": "jesse@fsck.com"
+    "name": "Joe Goldin",
+    "email": "joe@joegold.in"
   },
   "plugins": [
     {
@@ -12,8 +12,8 @@
       "version": "3.2.1",
       "source": "./",
       "author": {
-        "name": "Jesse Vincent",
-        "email": "jesse@fsck.com"
+        "name": "Joe Goldin",
+        "email": "joe@joegold.in"
       }
     }
   ]
