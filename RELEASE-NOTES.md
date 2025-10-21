@@ -1,5 +1,48 @@
 # Superpowers Release Notes
 
+## v3.2.1 (2025-10-20)
+
+### New Features
+
+**Code reviewer agent now included in plugin**
+- Added `superpowers:code-reviewer` agent to plugin's `agents/` directory
+- Agent provides systematic code review against plans and coding standards
+- Previously required users to have personal agent configuration
+- All skill references updated to use namespaced `superpowers:code-reviewer`
+- Fixes #55
+
+### Files Changed
+- New: `agents/code-reviewer.md` - Agent definition with review checklist and output format
+- Updated: `skills/requesting-code-review/SKILL.md` - References to `superpowers:code-reviewer`
+- Updated: `skills/subagent-driven-development/SKILL.md` - References to `superpowers:code-reviewer`
+
+## v3.2.0 (2025-10-18)
+
+### New Features
+
+**Design documentation in brainstorming workflow**
+- Added Phase 4: Design Documentation to brainstorming skill
+- Design documents now written to `docs/plans/YYYY-MM-DD-<topic>-design.md` before implementation
+- Restores functionality from original brainstorming command that was lost during skill conversion
+- Documents written before worktree setup and implementation planning
+- Tested with subagent to verify compliance under time pressure
+
+### Breaking Changes
+
+**Skill reference namespace standardization**
+- All internal skill references now use `superpowers:` namespace prefix
+- Updated format: `superpowers:test-driven-development` (previously just `test-driven-development`)
+- Affects all REQUIRED SUB-SKILL, RECOMMENDED SUB-SKILL, and REQUIRED BACKGROUND references
+- Aligns with how skills are invoked using the Skill tool
+- Files updated: brainstorming, executing-plans, subagent-driven-development, systematic-debugging, testing-skills-with-subagents, writing-plans, writing-skills
+
+### Improvements
+
+**Design vs implementation plan naming**
+- Design documents use `-design.md` suffix to prevent filename collisions
+- Implementation plans continue using existing `YYYY-MM-DD-<feature-name>.md` format
+- Both stored in `docs/plans/` directory with clear naming distinction
+
 ## v3.1.1 (2025-10-17)
 
 ### Bug Fixes
